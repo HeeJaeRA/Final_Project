@@ -1,5 +1,5 @@
-# Created by https://www.gitignore.io/api/git,java,maven,windows,eclipse
-# Edit at https://www.gitignore.io/?templates=git,java,maven,windows,eclipse
+# Created by https://www.gitignore.io/api/git,java,maven,windows,eclipse,gradle
+# Edit at https://www.gitignore.io/?templates=git,java,maven,windows,eclipse,gradle
 
 ### Eclipse ###
 .metadata
@@ -149,4 +149,29 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/git,java,maven,windows,eclipse
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+# JDT-specific (Eclipse Java Development Tools)
+
+### Gradle Patch ###
+# Java heap dump
+*.hprof
+
+# End of https://www.toptal.com/developers/gitignore/api/git,java,eclipse,windows,gradle,maven
